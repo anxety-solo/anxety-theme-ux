@@ -15,5 +15,5 @@
   backdrop-filter: blur(8px) grayscale(0.6) !important;
 }
 .gradio-dropdown ul {
-  margin-top: 8px;
+  margin-top: 6px !important;
 }

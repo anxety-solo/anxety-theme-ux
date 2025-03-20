@@ -30,7 +30,7 @@
   --shadow: #010409;
 
   --ctp-accent: var(--ctp-anxety);
-  /* color-scheme: dark; */
+  color-scheme: dark;
 }
 
 :root,
@@ -136,15 +136,18 @@
 
 /* HTML */ 
 html, body {
-  background: var(--ctp-mantle);
+  background: var(--ctp-mantle) !important;
 }
-
 a:hover {
   color: var(--ctp-accent) !important;
 }
 
 
 /* Main customizations */
+.layout-footer,
+#sidebar_secondary_tabs {
+  display: none;
+}
 
 /* Other Customizations */
 /* Rounded Gradio Button */
@@ -242,6 +245,11 @@ input[type='number'] {
 
 
 /* === SLIDERS STYLE === */
+input[type='range'] {
+  background-color: var(--ctp-base2) !important;
+  border-color: transparent;
+}
+
 input[type='range']::-ms-track {
   background: transparent;
 }
